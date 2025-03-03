@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temporizador practica 2</title>
+</head>
+
+<body>
+    <input type="number" id="tiempoElegido" value="10">
+    <button onclick="comenzarTiempo()">Alarmas</button>
+    <h1 id="textoAlarma" style="color: red;">APAGADO</h1> 
+
+
+    <script>
+        let elementoSegundos = 
+        document.getElementById("tiempoElegido");
+        let elementoTextoAlarma = 
+        document.getElementById("textoAlarma");
+
+        function comenzarTiempo() {
+            setTimeout(tiempoClumplido,
+                1000 * elementoSegundos.value);
+        }
+
+        function tiempoClumplido() {
+            elementoTextoAlarma.textContent = "ENCENDIDO";
+            elementoTextoAlarma.style.color = "green";
+            alert("¡Se acabo el tiempo!");
+        }
+
+    </script>
+</body>
+
+</html>
