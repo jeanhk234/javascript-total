@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cotidiano juego de preguntas</title>
+    <link rel="stylesheet" href="misEstilos.css">
+</head>
+
+<body  onload="comenzarReloj()">
+
+    <h1>Responde a las preguntas lo mas rapido que puedas<h1 id="tiempoElegido" value="30">30</h1>
+
+    <h3>1.Cuantos años tienes?</h3>
+    <input type="text">
+    <h3>2.Cuantos skibidis tienes?</h3>
+    <input type="text">
+    <h3>3.Porque tienes guardado a esos skibidis?</h3>
+    <input type="text">
+    <h3>4.Cual es el mejor final de videojuego que haz visto?</h3>
+    <input type="text">
+    <h3>5.Disfrutas de tu vida?</h3>
+    <input type="text">
+
+
+
+
+
+    <script>
+        let elementoSegundos = 
+       document.getElementById("tiempoElegido");
+
+       
+       function comenzarReloj() {
+            setTimeout(tiempoClumplido, 
+            1000 * elementoSegundos.value);
+        }
+
+
+
+        function tiempoClumplido() {
+            alert("¡Se acabo el tiempo!");}
+
+
+
+     
+
+    </script>
+
+
+    
+    
+
+
+</body>
+</html>
