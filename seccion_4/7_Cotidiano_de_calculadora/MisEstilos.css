@@ -1,0 +1,42 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #808080;
+    text-align: center;
+}
+
+input {
+    height: 20px;    
+    width: 80px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+button {
+    height: 35px;    
+    width: 42px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(0, 99, 247);
+    background-color: silver;
+}
+
+.doble button {
+    height: 35px;    
+    width: 88px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.triple button {
+    height: 35px;    
+    width: 56px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+#resultado {
+    height: 20px;
+    width: 170px;
+    font-size: 1rem;
+}
