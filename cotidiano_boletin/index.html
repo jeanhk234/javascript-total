@@ -8,9 +8,6 @@
     </head>
 
     <body>
-        <h1> <img src="C:\Users\Estudiante\Documents\javascript-total\cotidiano_boletin\ctp img.jpg"
-            width="15%">
-        </h1>
 
         <h2>Nota:</h2>
 
@@ -23,12 +20,68 @@
         </h3>
 
         <h3>Promedio:</h3>
-        <button>calcular promedio</button>
+        <button onclick="promedio()"> calcular promedio</button>
+
+        <script>
+            function promedio() {
+
+            let array1 = [7 + 4 + 8 + 9 + 6];
+            
+            for (let numero of array1) {
+                if (numero / 5){
+                    document.write(numero / 5 );
+     
+                } else {
+                    break;
+                    document.write("numero mayor a 50");
+                }
+            }
+            }
+    
+            </script>
 
         <h3>Nota mas alta:</h3>
-        <button>calcular promedio</button>
+        <button onclick="alta()">calcular promedio</button>
+        
+        <script>
+            function alta() {
+
+            let array1 = [1 + 2];
+            
+            for (let numero of array1) {
+                if (numero * 3 ){
+                    document.write(numero * 3 );
+     
+                } else {
+                    break;
+                    document.write("numero mayor a 50");
+                }
+            }
+            }
+    
+            </script>
 
         <h3>Hubo algun aplazo:</h3>
-        <button>calcular promedio</button>
+        <button onclick="aplazo()">calcular promedio</button>
+
+        <script>
+            function aplazo() {
+
+            let array1 = [2 + 2];
+            
+            for (let numero of array1) {
+                if (numero * 1 ){
+                    document.write(numero * 1 );
+     
+                } else {
+                    break;
+                    document.write("n");
+                }
+
+                document.write("NO")
+            }
+            }
+    
+            </script>
     </body>
 </html>
