@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<head>
+    <title>constructor</title>
+</head>
+
+<body>
+    <script>
+        function perro() {
+            this.nombre = "";
+            this.patas = 4;
+            this.ladrar = function() {
+                console.log("guau");
+            };
+        } ;
+
+        let simba = new perro();
+        let reina = new perro();
+        let batu = new perro();
+    </script>
+</body>

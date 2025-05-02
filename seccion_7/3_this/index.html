@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <title>palabra clave "this"</title>
+</head>
+
+<body>
+    <script>
+        let perro = {
+            nombre: "simba",
+            raza: "shih tzu",
+            edad: 4,
+            ladrar() {
+            console.log("Guau");
+            },
+
+            saludar() {
+            console.log("Hola, me llamo " + this.nombre);
+            }
+        
+    };
+
+    let perro2 = {
+        nombre: "reina",
+            raza: "caniche",
+            edad: 15,
+            ladrar() {
+            console.log("Guau");
+            },
+
+            saludar() {
+            console.log("Hola, me llamo " + this.nombre);
+            }
+        
+    };
+
+    </script>
+</body>
