@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>practicas 1 y 2</title>
+</head>
+
+<body>
+    <script>
+        let automovil1 = new Object()
+
+        automovil1.marca = 'lamborgini';
+        automovil1.anio = 2020;
+        automovil1['modelo'] = 'evento final';
+        automovil1.encender = function() {
+            alert("coche encendido");
+        };
+        
+        let automovil = Object.create(automovil1);
+
+        let automovil2 = new Object()
+
+        automovil1.marca = 'Ford';
+        automovil1.anio = 2015;
+        automovil1['modelo'] = 'Fiesta';
+        automovil1.encender = function() {
+            alert("coche encendido");
+        };
+        
+        let automovil3 = Object.create(automovil1);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+body{
+    background-color: darkkhaki;
+
+}
+
+h3{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input{
+    background-color: rgb(255, 255, 255);
+}
+
+button{
+    height: 45px;    
+    width: 125px;
+    font-size: 1.5;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: rgb(34, 18, 18);
+    background-color: silver;
+}
