@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<head>
+    <title>practica cadenas 1</title>
+</head>
+
+<body>
+    <script>
+        let carro = {marca: 'chevrolet', modelo: 'fantasy' };
+
+        let carro1 = Object.create(carro);
+
+        console.log(carro1.marca.modelo);
+
+        console.log(Object.getPrototypeOf(carro1));
+    </script>
+</body>

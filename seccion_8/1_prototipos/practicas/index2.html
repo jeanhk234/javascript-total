@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<head>
+    <title>practica cadenas 2</title>
+</head>
+
+<body>
+    <script>
+        let estudiantes = {nombre: 'torres', apellido: 'sida', Legajo: 'casa grande'};
+
+        let estudiante1 = Object.create(estudiantes);
+
+        console.log(estudiante1.nombre.apellido);
+
+        console.log(Object.getPrototypeOf(estudiante1));
+    </script>
+</body>
