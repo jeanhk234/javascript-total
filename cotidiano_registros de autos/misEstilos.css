@@ -1,0 +1,21 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(221, 194, 119);
+}
+
+button{
+    background-color: rgb(101, 202, 101);
+    margin-top: 50px;
+    height: 60px;    
+    width: 190px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    
+}
+
+body{
+    background-color: rgb(241, 227, 143);
+}
+
+

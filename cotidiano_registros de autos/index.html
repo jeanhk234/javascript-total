@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <title>cotidiano registro de autos</title>
+    <link rel="stylesheet" href="misEstilos.css">
+    <script src="java.js"></script>
+</head>
+
+<body>
+    <h1>REGISTRO AUTOMOTOR</h1>
+
+    <button id="registro">ver registros</button>
+    <div id = "carro1"></div>
+    <div id="carro2"></div>
+    <div id="carro3"></div>
+
+    <script>
+
+    document.getElementById("registro")
+    .addEventListener("click", function() {
+    document.getElementById("carro1").textContent = "ferrari, 4x4, ilimitado";
+    document.getElementById("carro2").textContent = "chevrolet, samsung, esencial";
+    document.getElementById("carro3").textContent = "tesla, apple, famoso";
+    });
+
+    </script>
+</body>
