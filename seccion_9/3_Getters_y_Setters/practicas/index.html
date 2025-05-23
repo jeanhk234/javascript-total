@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <title>sub clases</title>
+</head>
+
+<body>
+    <script>
+        class Colegio{
+            constructor(nombre, habitaciones) {
+                this.nombre = nombre;
+                this.habitaciones = habitaciones;
+            }
+        }
+
+        class Estudiante extends Colegio{
+            constructor(nombre, apellido, libros){
+                super(nombre, apellido);
+                this._libros = libros;
+            }
+
+            get bolso(){
+                return this._libros;
+            }
+
+            set bolso(nuevoLibros){
+                this._libros = nuevoLibros;
+            }
+        }
+
+
+    </script>
+
+
+</body>
