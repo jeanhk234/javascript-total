@@ -1,11 +1,48 @@
+class animalitos {
+    constructor(nombre, patas){
+        this.nombre = nombre;
+        this.patas = patas;
+    }
+}   
+
+let perro = class extends animalitos {
+    constructor(nombre, patas, raza) {
+        this.nombre = nombre;
+        this.patas = patas;
+        this.raza = raza
+    }
+}
+
+let gato = class extends animalitos {
+    constructor(nombre, patas, raza) {
+        this.nombre = nombre;
+        this.patas = patas;
+        this.raza = raza
+    }
+}
+
+let conejo = class extends animalitos {
+    constructor(nombre, patas, raza) {
+        this.nombre = nombre;
+        this.patas = patas;
+        this.raza = raza
+    }
+}
+
+let perro2 = new perro(toyota, 4, chihuahua)
+let gato2 = new gato(toyota, 4, chihuahua)
+let conejo2 = new conejo(toyota, 4, chihuahua)
+
+
 function listaAnimales() {
 
-    let perro = "simba " + "shin tzu " + "4"
-    let perro2 = " toyota " + "can " + "4"
-    let perro3 = " 4x4 " + "pitbull " + "4"
-    
-    document.write(perro)
+
     document.write(perro2)
-    document.write(perro3)
+    
+
+
 }
+
+
+
 
