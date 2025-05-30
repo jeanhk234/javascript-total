@@ -1,0 +1,9 @@
+{
+    "nombre": "collegium",
+    "direccion": {
+        "calle": "petame",
+        "ciudad":  "tintin"
+    },
+    "cantEstudiantes": 4,
+    "estudiantes": ["Pedro Picapiedra", "Pablo Marmol", "Vilma Picapiedra"]
+}

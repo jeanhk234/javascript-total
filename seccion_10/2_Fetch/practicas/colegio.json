@@ -1,0 +1,11 @@
+{
+    "titulo": "peter",
+    "director": "pepe",
+    "premiosOscar": 3,
+    "duracion": "1000h",
+    "actores": {
+       "actor1": "sigma de corazon",
+       "actor2": "cpintenso"
+
+    }
+}

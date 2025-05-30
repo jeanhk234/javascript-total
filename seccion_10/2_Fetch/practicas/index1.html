@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <head>
+    <title>JSON</title>
+  </head>
+  <body>
+
+    <!-- Este elemento servirá para mostrar en pantalla la edad obtenida del archivo JSON -->
+    <div id="titulo"></div>
+    <div id="director"></div>
+    <div id="premiosOscar"></div>
+    <div id="duracion"></div>
+
+    <hr/>
+
+
+    <script>
+        let datosJson; // Se declara una variable para almacenar los datos del archivo JSON
+
+        /*
+          Se utiliza fetch() para hacer una petición HTTP y obtener el contenido de 'persona.json'
+          fetch() devuelve una Promesa, lo que permite trabajar de manera asíncrona.
+        */
+        fetch('colegio.json')
+        
+        /*
+          Se encadena un .then() para procesar la respuesta.
+          res.json() convierte la respuesta del servidor (tipo Response) en un objeto JSON.
+        */
+        .then(res => res.json())
+
+        /*
+          El siguiente .then() recibe el objeto JSON ya transformado como parámetro (llamado 'salida').
+          Se guarda en la variable datosJson, y se usa para mostrar la propiedad 'edad' en el HTML.
+        */
+        .then((salida) => {
+          datosJson = salida; // Asigna los datos del JSON a una variable global
+
+          // Se obtiene el elemento del DOM con id "nombre"
+          let elementoTitulo = document.getElementById('titulo');
+          let elementoDirector = document.getElementById('director');
+          let elementoPremiosOscar = document.getElementById('premiosOscar');
+          let elementoDuracion = document.getElementById('duracion');
+
+          // Se modifica el contenido del elemento con el valor de la propiedad 'edad' del JSON
+          elementoTitulo.textContent = datosJson.titulo;
+          elementoDirector.textContent = datosJson.director;
+          elementoPremiosOscar.textContent = datosJson.premiosOscar;
+          elementoDuracion.textContent = datosJson.duracion;
+        })
+        
+    </script>
+  </body>
+</html>
