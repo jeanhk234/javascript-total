@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <title>practica catch 1</title>
+</head>
+
+<body>
+
+    <div id="titulo"></div>
+    <div id="director"></div>
+    <div id="lanzamiento"></div>
+    <div id="duracion"></div>
+    <div id="actores"></div>
+    <div id="premiosOscar"></div>
+
+    <script>
+        let datosJson;
+
+        function ejecutar() {
+            fetch('peliculas.json')
+            .then(respuesta => respuesta.json())
+            .then (function(salida) {
+                titulo = salida.titulo
+                director = salida.director
+                lanzamiento = salida.lanzamiento
+                duracion = salida.duracion
+                actores = salida.actores
+                premiosOscar = salida.premiosOscar
+                console.log({titulo, director, lanzamiento, duracion, actores, premiosOscar});
+            })
+
+            
+        .catch(function(error) {
+          console.log(error);
+        })
+        }
+
+
+
+
+    </script>
+</body>
