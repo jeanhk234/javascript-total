@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>proyecto</title>
+        <link rel="stylesheet" href="misEstilos.css">
+        
+
+    </head>
+
+    <body>
+        <div class="gestor">
+            <h1>Gestor de finanzas personales</h1>
+
+            <div class="dinero">
+                <h2>Saldo: <span id="dinero">0</span></h2>
+            </div>
+
+            <form id="formulario">
+                <input type="text" id="descripcion" placeholder="user" required>
+                <input type="number" id="ingreso" placeholder="cantidad" required>
+                <label for="opcion">
+                <select id="opcion">
+                    <option value="ingresos">ingresos</option>
+                    <option value="gastos">gastos</option>
+                </select>
+                <button type="submit">agregar</button>
+                <button type="submit">editar</button>
+            </form>
+
+            <ul id="lista"></ul>
+        </div>
+        <script src="misScripts.js"></script>
+    </body>
+</html>
