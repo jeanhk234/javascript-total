@@ -1,30 +1,30 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f2f5;
-  color: #333;
+  background-color: #94add3;
+  color: #f8f6f6;
   margin: 0;
   padding: 20px;
 }
 
-/* Contenedor principal */
+
 .gestor {
   max-width: 600px;
   margin: auto;
-  background-color: #fff;
+  background-color: #7a6969;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(41, 109, 165, 0.685);
   padding: 30px;
 }
 
-/* Título */
+
 .gestor h1 {
   text-align: center;
   font-size: 2rem;
-  color: #007bff;
+  color: #23c554;
   margin-bottom: 20px;
 }
 
-/* Saldo */
+
 .dinero {
   text-align: center;
   margin-bottom: 20px;
@@ -33,10 +33,10 @@ body {
 .dinero span {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #28a745;
+  color: #13e043;
 }
 
-/* Formulario */
+
 form {
   display: flex;
   flex-direction: column;
@@ -48,14 +48,14 @@ input[type="text"],
 input[type="number"],
 select {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #55f050;
   border-radius: 8px;
   font-size: 1rem;
 }
 
 button[type="submit"] {
-  background-color: #007bff;
-  color: white;
+  background-color: #afb2b4;
+  color: rgb(95, 57, 57);
   border: none;
   padding: 12px;
   border-radius: 8px;
@@ -65,10 +65,10 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #2353b3;
 }
 
-/* Lista de transacciones */
+
 ul#lista {
   list-style: none;
   padding: 0;
@@ -89,7 +89,7 @@ ul#lista li span {
 }
 
 ul#lista li span:nth-child(2) {
-  color: #333;
+  color: #2fa743;
 }
 
 ul#lista li span.gastos {

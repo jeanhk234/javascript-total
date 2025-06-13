@@ -42,7 +42,7 @@ formulario.addEventListener('submit', function(e){
 
   const nuevoMonto = parseFloat(nuevoMontoTexto);
   if (!nuevaDescripcion || isNaN(nuevoMonto)) {
-    alert("Entrada no válida");
+    alert("no hay informacion");
     return;
   }
 
