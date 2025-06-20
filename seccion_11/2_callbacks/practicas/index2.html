@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Callbacks</title>
+</head>
+
+<body>
+    <script>
+        function test(callback) {
+            setTimeout(function() {
+                alert("mensaje impreso");
+                callback();
+            }, 1500);
+        }
+
+        function imprimir(mensaje) {
+            console.log();
+        }
+        test(imprimir);
+    </script>
+</body>

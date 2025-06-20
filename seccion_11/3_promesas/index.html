@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Las promesas tienen tres estados: pendiente, cumplida, fallida
+        let miPromesa = new promise(function(resolve, reject){
+            setTimeout(function(){
+                let error = false;
+                if(error) {
+                    reject("la promesa ha fallado")
+                }else{
+                    resolve("la promesa se ha cumplido")
+                }
+            })
+        })
+
+        miPromesa.then(function(resultado){
+            console.log(resultado);
+        }).catch(function(error){
+            console.log(error);
+        })
+    </script>
+</body>
