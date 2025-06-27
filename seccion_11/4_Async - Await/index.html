@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+    <title>sin Async/Await</title>
+</head>
+
+<body>
+    <h2>Conversion de dolares a colones (ejemplo con error)</h2>
+    <script>
+        let dolar;
+        let montoDolares = 100;
+
+        fecth('https://open.er-api.com/v6/latest/USD')
+        .then(res => res.son())
+        .then(data => {
+            dolar = data.rates.CRC //valor del dolar en colones
+            console.log("tasa obtenida: ", dolar)
+        })
+
+        //esto se ejecuta antes de tener respuesta del fecth
+        let colones = montoDolares * dolar;
+        console.log(`${montoDolares} dòlares son
+        aproximadamente ${colones} colones`)
+    </script>
+</body>
