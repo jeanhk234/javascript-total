@@ -1,0 +1,26 @@
+h1 {
+    background-color: rgb(71, 55, 19);
+    color: beige;
+}
+
+body {
+    background-color:rgb(199, 193, 142);
+}
+
+select {
+    width: 60px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    border-radius:10%;
+    border-color: rgb(206, 106, 88);
+
+}
+
+button{
+    background-color: rgb(49, 31, 14);
+    border-radius:5%;
+    border-color: rgb(49, 31, 14);
+    width: 200px;
+    height: 60px;
+    color: beige;
+}
