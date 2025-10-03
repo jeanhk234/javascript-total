@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Matriz 2x3
+        const matriz = [
+            [1, 2, 3],
+            ["a", "b", "C"]
+        ];
+
+        //Matriz 2x3 con tipos mezclados
+
+        //Recorremos filas (1)
+        for (let i = 0; i < matriz.length; i++) {
+            let fila = "";
+
+            //recordaremos columnas (j)
+            for (let j = 0; j < matriz[i].length; j++) {
+                fila += matriz[i][j] + " "; //concatenamos valores de la fila
+            }
+
+            console.log("Fila " + i + ": " + fila);
+
+            
+        }
+    </script>
+</body>
+</html>
